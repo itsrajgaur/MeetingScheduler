@@ -173,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<List<MeetingDetailsPojo>> call, Throwable t) {
 
                 Toast.makeText(MainActivity.this,"Failed",Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
             }
         });
 
